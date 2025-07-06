@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+
+    <div class="auth-container">
+        <div class="auth-box">
+            <div class="switcher">
+                <button onclick="showLogin()" id="loginBtn" class="active">Login</button>
+                <button onclick="showRegister()" id="registerBtn">Register</button>
+            </div>
+
+            <form id="loginForm" class="form active">
+                <h2>Welcome Back 👋</h2>
+                <input type="text" id="login-username" placeholder="Username" required />
+                <input type="password" id="login-password" placeholder="Password" required />
+                <button type="submit">Login</button>
+            </form>
+
+            <form id="registerForm" class="form">
+                <h2>Join Us 🚀</h2>
+                <input type="text" id="reg-username" placeholder="Username" required />
+                <input type="password" id="reg-password" placeholder="Password" required />
+
+                <select id="reg-role" required>
+                    <option value="Client">Client</option>
+                    <option value="Admin">Admin</option>
+                </select>
+
+                <button type="submit">Register</button>
+            </form>
+
+            <br />
+            <br />
+            <div class="form auth-check">
+                <h2>🔐 Auth Check</h2>
+                <button onclick="checkEndpoint('https://localhost:7095/api/Auth/Auth-endpoint')">Check Auth ✅</button>
+                <button onclick="checkEndpoint('https://localhost:7095/api/Auth/Admin-endpoint')">Check Admin 🧑‍💼</button>
+                <button onclick="checkEndpoint('https://localhost:7095/api/Auth/Client-endpoint')">Check Client 🧑‍💻</button>
+                <button onclick="logout()">Logout</button>
+            </div>
+
+
+        </div>
+        <br/>
+        <div id="message-bar" class="message-bar hidden"></div>
+    </div>
+       
+
+    <script>
+
+       
+
+        const loginForm = document.getElementById("loginForm");
+        const registerForm = document.getElementById("registerForm");
+        const loginBtn = document.getElementById("loginBtn");
+        const registerBtn = document.getElementById("registerBtn");
+
+        function showLogin() {
+            loginForm.classList.add("active");
+            registerForm.classList.remove("active");
+            loginBtn.classList.add("active");
+            registerBtn.classList.remove("active");
+        }
+
+        function showRegister() {
+            registerForm.classList.add("active");
+            loginForm.classList.remove("active");
+            registerBtn.classList.add("active");
+            loginBtn.classList.remove("active");
+        }
+
+        loginForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const username = document.getElementById("login-username").value;
+            const password = document.getElementById("login-password").value;
+
+            const res = await fetch("https://localhost:7095/api/Auth/signin", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ username, password }),
+            });
+
+            const data = await res.json();
+            if (res.ok) {
+                localStorage.setItem("accessToken", data.accessToken);
+                localStorage.setItem("refreshToken", data.refreshToken);
+                showMessage("✅ Login success", "success");
+                
+                document.querySelector(".auth-check").classList.add("active");
+            } else {
+                showMessage(data || "❌ Login failed", "error");
+            }
+        });
+
+        registerForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const username = document.getElementById("reg-username").value;
+            const password = document.getElementById("reg-password").value;
+            const roles = document.getElementById("reg-role").value;
+
+            const res = await fetch("https://localhost:7095/api/Auth/register", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ username, password, roles }),
+            });
+
+            const data = await res.json();
+            if (res.ok) {
+                showMessage("✅ Registration successful", "success");
+                registerForm.reset(); // clear all fields
+                showLogin();
+            } else {
+                showMessage(data || "❌ Registration failed", "error");
+            }
+        });
+
+
+        async function checkEndpoint(endpoint) {
+            const token = localStorage.getItem("accessToken");
+
+            const res = await fetch(endpoint, {
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                },
+            });
+
+            const label = endpoint.split('/').pop();
+
+            if (res.ok) {
+                showMessage(`✅ Access granted to "${label}"`, "success");
+            } else {
+                showMessage(`❌ Access denied to "${label}"`, "error");
+            }
+        }
+
+        function logout() {
+            localStorage.removeItem("accessToken");
+            localStorage.removeItem("refreshToken");
+            showMessage("Logged out", "success");
+            loginForm.reset();
+            document.querySelector(".auth-check").classList.remove("active");
+        }
+        window.addEventListener('DOMContentLoaded', () => {
+            const token = localStorage.getItem("accessToken");
+            if (token) {
+                document.querySelector(".auth-check").classList.add("active");
+            }
+        });
+        function showMessage(message, type = "success") {
+            const msgBar = document.getElementById("message-bar");
+            msgBar.textContent = message;
+            msgBar.className = `message-bar ${type}`;
+
+            setTimeout(() => {
+                msgBar.classList.add("hidden");
+            }, 4000);
+        }
+    </script>
+
+</body>
+</html>
