@@ -1,0 +1,28 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/AuthJwtAPI/Index.40wzelgcuw.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"40wzelgcuw"},{"Name":"integrity","Value":"sha256-PDF2CYBqbeqZyHFdH1ZqTOzQdHR6eAic7VXaeIsjoDY="},{"Name":"label","Value":"_content/AuthJwtAPI/Index.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6573"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022PDF2CYBqbeqZyHFdH1ZqTOzQdHR6eAic7VXaeIsjoDY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 06 Jul 2025 21:25:30 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AuthJwtAPI/Index.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-PDF2CYBqbeqZyHFdH1ZqTOzQdHR6eAic7VXaeIsjoDY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6573"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022PDF2CYBqbeqZyHFdH1ZqTOzQdHR6eAic7VXaeIsjoDY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 06 Jul 2025 21:25:30 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AuthJwtAPI/Style.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Style.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-hErRImVkpNwJ2lQ4UemTglZoCGkHOpLNvQb\u002BYxih418="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2638"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022hErRImVkpNwJ2lQ4UemTglZoCGkHOpLNvQb\u002BYxih418=\u0022"},{"Name":"Last-Modified","Value":"Sun, 06 Jul 2025 21:14:50 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AuthJwtAPI/Style.w9e1kug6m1.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Style.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"w9e1kug6m1"},{"Name":"integrity","Value":"sha256-hErRImVkpNwJ2lQ4UemTglZoCGkHOpLNvQb\u002BYxih418="},{"Name":"label","Value":"_content/AuthJwtAPI/Style.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2638"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022hErRImVkpNwJ2lQ4UemTglZoCGkHOpLNvQb\u002BYxih418=\u0022"},{"Name":"Last-Modified","Value":"Sun, 06 Jul 2025 21:14:50 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

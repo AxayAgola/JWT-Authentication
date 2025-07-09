@@ -1,0 +1,228 @@
+{
+  "Version": 1,
+  "Hash": "54VRDRPMuYogIBRrfk4Eblh0rkWYCjOsHvlID5ykJMc=",
+  "Source": "AuthJwtAPI",
+  "BasePath": "_content/AuthJwtAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "AuthJwtAPI\\wwwroot",
+      "Source": "AuthJwtAPI",
+      "ContentRoot": "C:\\Github\\AuthJwtAPI\\wwwroot\\",
+      "BasePath": "_content/AuthJwtAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Github\\AuthJwtAPI\\wwwroot\\Index.html",
+      "SourceId": "AuthJwtAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Github\\AuthJwtAPI\\wwwroot\\",
+      "BasePath": "_content/AuthJwtAPI",
+      "RelativePath": "Index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "40wzelgcuw",
+      "Integrity": "PDF2CYBqbeqZyHFdH1ZqTOzQdHR6eAic7VXaeIsjoDY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Index.html"
+    },
+    {
+      "Identity": "C:\\Github\\AuthJwtAPI\\wwwroot\\Style.css",
+      "SourceId": "AuthJwtAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Github\\AuthJwtAPI\\wwwroot\\",
+      "BasePath": "_content/AuthJwtAPI",
+      "RelativePath": "Style#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w9e1kug6m1",
+      "Integrity": "hErRImVkpNwJ2lQ4UemTglZoCGkHOpLNvQb+Yxih418=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Style.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "Index.40wzelgcuw.html",
+      "AssetFile": "C:\\Github\\AuthJwtAPI\\wwwroot\\Index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6573"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PDF2CYBqbeqZyHFdH1ZqTOzQdHR6eAic7VXaeIsjoDY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 21:25:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "40wzelgcuw"
+        },
+        {
+          "Name": "label",
+          "Value": "Index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PDF2CYBqbeqZyHFdH1ZqTOzQdHR6eAic7VXaeIsjoDY="
+        }
+      ]
+    },
+    {
+      "Route": "Index.html",
+      "AssetFile": "C:\\Github\\AuthJwtAPI\\wwwroot\\Index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6573"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PDF2CYBqbeqZyHFdH1ZqTOzQdHR6eAic7VXaeIsjoDY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 21:25:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PDF2CYBqbeqZyHFdH1ZqTOzQdHR6eAic7VXaeIsjoDY="
+        }
+      ]
+    },
+    {
+      "Route": "Style.css",
+      "AssetFile": "C:\\Github\\AuthJwtAPI\\wwwroot\\Style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2638"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hErRImVkpNwJ2lQ4UemTglZoCGkHOpLNvQb+Yxih418=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 21:14:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hErRImVkpNwJ2lQ4UemTglZoCGkHOpLNvQb+Yxih418="
+        }
+      ]
+    },
+    {
+      "Route": "Style.w9e1kug6m1.css",
+      "AssetFile": "C:\\Github\\AuthJwtAPI\\wwwroot\\Style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2638"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hErRImVkpNwJ2lQ4UemTglZoCGkHOpLNvQb+Yxih418=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 21:14:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w9e1kug6m1"
+        },
+        {
+          "Name": "label",
+          "Value": "Style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hErRImVkpNwJ2lQ4UemTglZoCGkHOpLNvQb+Yxih418="
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Github\\AuthJwtAPI\\wwwroot\\Index.html",
+      "PackagePath": "staticwebassets\\Index.html"
+    },
+    {
+      "Id": "C:\\Github\\AuthJwtAPI\\wwwroot\\Style.css",
+      "PackagePath": "staticwebassets\\Style.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AuthJwtAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AuthJwtAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.AuthJwtAPI.props",
+      "PackagePath": "build\\AuthJwtAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.AuthJwtAPI.props",
+      "PackagePath": "buildMultiTargeting\\AuthJwtAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.AuthJwtAPI.props",
+      "PackagePath": "buildTransitive\\AuthJwtAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
